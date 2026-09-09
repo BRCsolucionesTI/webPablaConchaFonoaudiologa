@@ -640,6 +640,144 @@ section {
   line-height: 1.65;
 }
 
+.servicios-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+/* ===== PÁGINAS SEO INTERIORES ===== */
+.seo-page .page-breadcrumb {
+  padding: 7.5rem 2rem 1.5rem;
+  background: var(--crema);
+}
+
+.page-breadcrumb-inner {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  color: var(--texto-suave);
+  font-size: 0.9rem;
+}
+
+.page-breadcrumb a {
+  color: var(--turquesa-dark);
+  text-decoration: none;
+}
+
+.page-breadcrumb a:hover { color: var(--texto); }
+
+.page-breadcrumb-sep { color: var(--turquesa); }
+
+.page-hero {
+  padding: 4rem 2rem 6rem;
+  background: linear-gradient(135deg, var(--crema) 0%, var(--crema-warm) 100%);
+}
+
+.page-hero-inner {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.5rem, 5.5vw, 4.5rem);
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+}
+
+.page-hero h1 em {
+  color: var(--turquesa-dark);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.page-hero p {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--texto-suave);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.page-section-header {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.page-section-header h2,
+.page-copy h2 {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+
+.page-section-header h2 em,
+.page-copy h2 em {
+  color: var(--turquesa-dark);
+  font-style: italic;
+}
+
+.page-section-header p,
+.page-copy p {
+  color: var(--texto-suave);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.seo-page .servicio-card {
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+}
+
+.seo-page .servicio-card p { margin-bottom: 1.8rem; }
+
+.seo-page .servicio-card .btn-primary {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.page-detail { background: var(--crema-warm); }
+
+.page-copy {
+  max-width: 850px;
+  margin: 0 auto;
+  background: var(--blanco);
+  padding: 3rem;
+  border: 1px solid rgba(163, 194, 190, 0.15);
+  border-radius: 24px;
+}
+
+.page-copy p + p { margin-top: 1rem; }
+
+.page-cta {
+  background: var(--crema);
+  text-align: center;
+}
+
+.page-cta h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.page-cta p {
+  color: var(--texto-suave);
+  margin: 0 auto 2rem;
+  max-width: 620px;
+}
+
+@media (max-width: 500px) {
+  .seo-page .page-breadcrumb { padding: 6.5rem 1.2rem 1.25rem; }
+  .page-hero { padding: 3rem 1.2rem 4rem; }
+  .page-copy { padding: 2.5rem 1.5rem; }
+}
+
 /* ===== EVALUACIÓN ESPECIALIZADA ===== */
 .evaluacion {
   background: linear-gradient(135deg, var(--turquesa) 0%, var(--turquesa-dark) 100%);
